@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ClearType" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title, desc -->
+  <title>Team Collaboration App &middot; Quintessential Tortoise</title>
+  <meta name="description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./main.css">
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="frame" role="application">
+    <!--
+      Component: Tabgroup
+
+      A group of one or more tab+tabpanel pairs. When a user clicks on a tab,
+      they see the associated tabpanel. Only one tab+tabpanel pair can be
+      visible at any given time.
+    -->
+    <div class="tabgroup" role="group">
+      <!--
+        Tabgroup: State
+
+        Change the "checked" tab state with CSS using the "checkbox hack". The
+        first tab+tabpanel pair should be set to "checked" by default.
+        More info: https://css-tricks.com/functional-css-tabs-re-revisited/
+      -->
+      <input class="tabgroup-state" type="radio" name="tabgroup-states-1" id="tabgroup-state-chat" role="tab" aria-controls="tabgroup-tabpanel-chat" aria-selected="true" checked>
+      <input class="tabgroup-state" type="radio" name="tabgroup-states-1" id="tabgroup-state-screenshare" role="tab" aria-controls="tabgroup-tabpanel-screenshare" aria-selected="false">
+      <!--
+        Tabgroup: Tablist
+
+        A collection of tab elements that users click to change the "checked"
+        tabpanel within a tabgroup component.
+      -->
+      <div class="tabgroup-tablist" role="tablist">
+        <label class="tabgroup-tab" id="tabgroup-tab-chat" for="tabgroup-state-chat" role="tab" aria-selected="true">
+          Chat
+          <span class="tabgroup-tab-icon">&times;</span>
+        </label>
+        <label class="tabgroup-tab" id="tabgroup-tab-screenshare" for="tabgroup-state-screenshare" role="tab">
+          Screen Sharing
+          <span class="tabgroup-tab-icon">&times;</span>
+        </label>
+      </div>
+      <!--
+        Tabgroup: Tabpanels
+        A collection of tabpanels. Each tabpanel has a corresponding tab
+        (see above) that is used to set its state to "checked".
+      -->
+      <div class="tabgroup-tabpanels">
+        <div class="tabgroup-tabpanel" id="tabgroup-tabpanel-chat" role="tabpanel" aria-labelledby="tabgroup-tab-chat" aria-hidden="false">
+          <div class="chat" role="log" aria-live="assertive">
+            <ul class="chat-log">
+              <li class="chat-record">
+                <a href="#!" class="chat-record-avatar chat-avatar">
+                  <img src="http://placekitten.com/64/64" alt="">
+                </a>
+                <div class="chat-record-bubble">
+                  <div class="chat-record-meta">
+                    <a class="chat-record-meta-link" href="#!">16 minutes ago</a>
+                  </div>
+                  <h2 class="chat-record-heading">Fluffy McFlufferson</h2>
+                  <div class="chat-record-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro illo reprehenderit quo neque dolorum, consequuntur perspiciatis ad. Sunt alias laboriosam tempore dicta eum mollitia nam atque, architecto, maxime earum totam.
+                  </div>
+                </div>
+              </li>
+              <li class="chat-record chat-record-reverse">
+                <a href="#!" class="chat-record-avatar chat-avatar">
+                  <img src="http://placekitten.com/64/64" alt="">
+                </a>
+                <div class="chat-record-bubble">
+                  <div class="chat-record-meta">
+                    <a class="chat-record-meta-link" href="#!">16 minutes ago</a>
+                  </div>
+                  <h2 class="chat-record-heading">Fluffy McFlufferson</h2>
+                  <div class="chat-record-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro illo reprehenderit quo neque dolorum, consequuntur perspiciatis ad. Sunt alias laboriosam tempore dicta eum mollitia nam atque, architecto, maxime earum totam.
+                  </div>
+                </div>
+              </li>
+              <li class="chat-record">
+                <a href="#!" class="chat-record-avatar chat-avatar">
+                  <img src="http://placekitten.com/64/64" alt="">
+                </a>
+                <div class="chat-record-bubble">
+                  <div class="chat-record-meta">
+                    <a class="chat-record-meta-link" href="#!">16 minutes ago</a>
+                  </div>
+                  <h2 class="chat-record-heading">Fluffy McFlufferson</h2>
+                  <div class="chat-record-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro illo reprehenderit quo neque dolorum, consequuntur perspiciatis ad. Sunt alias laboriosam tempore dicta eum mollitia nam atque, architecto, maxime earum totam.
+                  </div>
+                </div>
+              </li>
+              <li class="chat-record chat-record-reverse">
+                <a href="#!" class="chat-record-avatar chat-avatar">
+                  <img src="http://placekitten.com/64/64" alt="">
+                </a>
+                <div class="chat-record-bubble">
+                  <div class="chat-record-meta">
+                    <a class="chat-record-meta-link" href="#!">16 minutes ago</a>
+                  </div>
+                  <h2 class="chat-record-heading">Fluffy McFlufferson</h2>
+                  <div class="chat-record-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro illo reprehenderit quo neque dolorum, consequuntur perspiciatis ad. Sunt alias laboriosam tempore dicta eum mollitia nam atque, architecto, maxime earum totam.
+                  </div>
+                </div>
+              </li>
+              <li class="chat-record">
+                <a href="#!" class="chat-record-avatar chat-avatar">
+                  <img src="http://placekitten.com/64/64" alt="">
+                </a>
+                <div class="chat-record-bubble">
+                  <div class="chat-record-meta">
+                    <a class="chat-record-meta-link" href="#!">16 minutes ago</a>
+                  </div>
+                  <h2 class="chat-record-heading">Fluffy McFlufferson</h2>
+                  <div class="chat-record-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro illo reprehenderit quo neque dolorum, consequuntur perspiciatis ad. Sunt alias laboriosam tempore dicta eum mollitia nam atque, architecto, maxime earum totam.
+                  </div>
+                </div>
+              </li>
+              <li class="chat-record chat-record-reverse">
+                <a href="#!" class="chat-record-avatar chat-avatar">
+                  <img src="http://placekitten.com/64/64" alt="">
+                </a>
+                <div class="chat-record-bubble">
+                  <div class="chat-record-meta">
+                    <a class="chat-record-meta-link" href="#!">16 minutes ago</a>
+                  </div>
+                  <h2 class="chat-record-heading">Fluffy McFlufferson</h2>
+                  <div class="chat-record-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro illo reprehenderit quo neque dolorum, consequuntur perspiciatis ad. Sunt alias laboriosam tempore dicta eum mollitia nam atque, architecto, maxime earum totam.
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="chat-input">
+              <div class="chat-input-avatar chat-avatar"><img src="http://placekitten.com/64/64" alt=""></div>
+              <div class="chat-textarea">
+                <textarea name="chat-textarea" rows="4" placeholder="Say something&hellip;"></textarea>
+                <div class="chat-textarea-arrow"></div>
+              </div>
+              <div class="chat-submit">
+                <button class="chat-submit-button">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabgroup-tabpanel" id="tabgroup-tabpanel-screenshare" role="tabpanel" aria-labelledby="tabgroup-tab-screenshare" aria-hidden="true">
+          Screenshare
+        </div>
+      </div>
+      <!-- Update tabgroup ARIA attributes when the "checked" tab changes. -->
+      <script>
+        // JS here
+      </script>
+    </div>
+    <!--
+      Component: Tabgroup
+
+      A group of one or more tab+tabpanel pairs. When a user clicks on a tab,
+      they see the associated tabpanel. Only one tab+tabpanel pair can be
+      visible at any given time.
+    -->
+    <div class="tabgroup" role="group">
+      <!--
+        Tabgroup: State
+
+        Change the "checked" tab state with CSS using the "checkbox hack". The
+        first tab+tabpanel pair should be set to "checked" by default.
+        More info: https://css-tricks.com/functional-css-tabs-re-revisited/
+      -->
+      <input class="tabgroup-state" type="radio" name="tabgroup-states-2" id="tabgroup-state-whiteboard" role="tab" aria-controls="tabgroup-tabpanel-whiteboard" aria-selected="true" checked>
+      <!--
+        Tabgroup: Tablist
+
+        A collection of tab elements that users click to change the "checked"
+        tabpanel within a tabgroup component.
+      -->
+      <div class="tabgroup-tablist" role="tablist">
+        <label class="tabgroup-tab" id="tabgroup-tab-whiteboard" for="tabgroup-state-whiteboard" role="tab" aria-selected="true">
+          Whiteboard
+          <span class="tabgroup-tab-icon">&times;</span>
+        </label>
+      </div>
+      <!--
+        Tabgroup: Tabpanels
+        A collection of tabpanels. Each tabpanel has a corresponding tab
+        (see above) that is used to set its state to "checked".
+      -->
+      <div class="tabgroup-tabpanels">
+        <div class="tabgroup-tabpanel" id="tabgroup-tabpanel-whiteboard" role="tabpanel" aria-labelledby="tabgroup-tab-chat" aria-hidden="false">
+          Whiteboard
+        </div>
+      </div>
+      <!-- @TODO: Update tabgroup ARIA attributes when the "checked" tab changes. -->
+      <script>
+        // JS here
+      </script>
+    </div>
+  </div>
+</body>
+</html>
