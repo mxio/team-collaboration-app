@@ -133,13 +133,13 @@
   --chat-textarea-focus-border-color: var(--color-theme-1);
   --chat-textarea-focus-arrow-before-border-color: transparent var(--color-theme-1) transparent transparent;
   --chat-textarea-arrow-before-top: 20px;
-  --chat-textarea-arrow-before-left: -11px;
+  --chat-textarea-arrow-before-left: -11.5px;
   --chat-textarea-arrow-before-border-width: 12px 12px 12px 0;
-  --chat-textarea-arrow-before-border-color: transparent var(--color-gray-light) transparent transparent;
-  --chat-textarea-arrow-after-top: 21px;
-  --chat-textarea-arrow-after-left: -10px;
+  --chat-textarea-arrow-before-border-color: transparent #EAEEFC transparent transparent;
+  --chat-textarea-arrow-after-top: 21.5px;
+  --chat-textarea-arrow-after-left: -9px;
   --chat-textarea-arrow-after-border-width: 11px 11px 11px 0;
-  --chat-textarea-arrow-after-border-color: transparent var(--color-white) transparent transparent;
+  --chat-textarea-arrow-after-border-color: transparent #F7F7F7 transparent transparent;
   --chat-submit-margin: var(--spacing-3);
   --chat-submit-button-font-family: var(--font-family-1);
   --chat-submit-button-font-weight: 400;
@@ -433,6 +433,9 @@ img {
   padding: var(--chat-textarea-padding);
   border: var(--chat-textarea-border);
   border-radius: var(--chat-textarea-border-radius);
+  background-color: #F7F7F7;
+  border: 2px solid #EAEEFC; 
+  color: #BDC1CB;
 }
 
 /* Change textarea border color on "focus" state. */
@@ -507,4 +510,106 @@ img {
 /* Set to fill remaining space between sibling elements. */
 .chat-record-bubble {
   flex: 1;
+}
+
+/*Float time to the right. */
+.chat-record-meta {
+  float: right;
+}
+
+.chat-record-meta-link {
+  color: #BDC1CB;
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-2);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Float name to left. */
+.chat-record-heading {
+  float: left;
+  margin-top: 0px;
+  color: #8EA6E6;
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-1);
+  font-weight: 500;
+}
+
+.chat-record-reverse .chat-record-heading {
+  color: #000;
+}
+
+.chat-record-content {
+  clear: both; 
+}
+
+.chat-record-bubble {
+  background-color: #EAEEFC; 
+  padding: 2vh 3%;
+  border-radius: 5px;
+}
+
+.chat-record-reverse .chat-record-bubble {
+  background-color: #fff;
+  border: 1px solid #CED6DB;
+}
+
+.chat-bubble-arrow {
+  border-color: #000 transparent transparent transparent;
+    border-top-color: transparent;
+    border-right-color: #EAEEFC;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+  border-width: 10px;
+  border-radius: 2px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  margin-top: -20vh;
+  left: 84px;
+}
+
+.chat-bubble-arrow-reverse {
+  border-color: transparent transparent transparent #CED6DB;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+  border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+  border-width: 10px;
+  border-radius: 2px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  margin-top: -20vh;
+  left: 516.33px; 
+}
+
+.chat-bubble-arrow-reverse-border {
+  border-color: transparent transparent transparent #CED6DB;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #CED6DB;
+  border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+  border-width: 10px;
+  border-radius: 2px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  margin-top: -20vh;
+  left: 517px; 
 }
