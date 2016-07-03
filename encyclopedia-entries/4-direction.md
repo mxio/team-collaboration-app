@@ -7,7 +7,7 @@ CSS property for direction of text
 
 ## Syntax
 
-The `description` property can be used with any kind of elements. Value options for the property are: ltr, rtl, initial, and inherit. By default, the direction is set to ltr but if for any reason the direction has not been set, ltr can be used as a value.
+The `direction` property can be used with any kind of elements. Value options for the property are: ltr, rtl, initial, and inherit. By default, the direction is set to ltr but if for any reason the direction has not been set, ltr can be used as a value.
 
 ```
 direction: <ltr | rtl | initial | inherit>;
