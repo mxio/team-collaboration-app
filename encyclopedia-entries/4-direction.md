@@ -1,27 +1,31 @@
-# Encyclopedia  Entry Name
+# Direction - CSS 
 
-*Write a short "what it is" here. This can be a one-word definition.*
+CSS property
 
 Write a description here. Provide an overview of what the reference entry is, how it's used, it's significance, or how it's commonly used.
+
+Direction is a CSS property used as a way to change the direction of content flow. The default direction is left to right, but this property allows changing the direction to right to left. This property is usually used with the `unicode-bidi` property to allow display of different languages on the same document that may need to flow righ to left instead.
 
 
 ## Syntax
 
-Introduction to the syntax/usage. A example of CSS syntax is below:
+The `description` property can be used with any kind of elements. Value options for the property are: ltr (left to right), rtl (right to left), initial, and inherit. By default, the direction is set to ltr but if for any reason the direction has not been set, ltr can be used as a value.
 
 ```
-        background: <color | url(path) | others.. | none>;
+direction: <ltr | rtl | initial | inherit>;
 ```
 
 ### Values
 
-This is a CSS example, so each value would need it's own sub-section below.
+#### ltr & rtl
 
-#### Color
 
 An explanation of the "color" value belongs here.
 
-#### url(path)
+#### initial
+
+#### inherit
+
 
 An explanation of using `url(path)` as a value to link to an image belongs here.
 
