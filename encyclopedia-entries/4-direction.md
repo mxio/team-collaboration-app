@@ -23,16 +23,16 @@ rtl: Text direction runs from right to left.
 Initial makes the property use its default.
 
 #### inherit
-
-
-An explanation of using `url(path)` as a value to link to an image belongs here.
+The property will inherit the direction of its parent element.
 
 ## Example 1
 
 Write a introduction to the example, sufficient to explain what the example is showing.
 
 ```
-        background: green;
+.main {
+        direction: rtl;
+}
 ```
 
 ## Example 2
@@ -40,7 +40,9 @@ Write a introduction to the example, sufficient to explain what the example is s
 Write a introduction to the example, sufficient to explain what the example is showing.
 
 ```
-        background: url('path_to_image.png');
+.main {
+        direction: rtl;
+        unicode-bidi: bidi-override;
 ```
 
 ## Example 3 - Complex
@@ -51,6 +53,12 @@ Write a introduction to the example, sufficient to explain what the example is s
         background: none 50% 25% auto contain fixed;
 ```
 
-## Special Notes
+## Browser Support
 
-Add information that you found that seemed lesser known. Common bugs, obscure bugs, important distinctions, all belong in this section.
+The `direction` property is supported by all major browsers.  
+
+* Firefox - 1.0 and up  
+* Chrome - 2.0 and up  
+* Safari - 1.3 and up
+* Edge - 5.5 and up
+* Opera - 9.2 and up
