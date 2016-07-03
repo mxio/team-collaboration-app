@@ -59,5 +59,4 @@ Using CSS will help the audience see the cite url or the time and date the chang
 ## Special Notes
 As noted above, `ins` can be an inline-block element or block level element depending on its parent element. If the tag's parent is `body`, then it will be a block level element. However, if the parent element is a `p` tag, it will be an inline-element. If the `ins` element is inside a `p` tag, the child element of the `ins` element cannot be a block level element. 
 
-
-Add information that you found that seemed lesser known. Common bugs, obscure bugs, important distinctions, all belong in this section.
+Lastly, this element is supported by all major browsers.
