@@ -2,7 +2,7 @@
 
 CSS property for direction of text
 
-`Direction` is a CSS property used as a way to change the direction of text flow. The default direction is left to right, but this property allows changing the direction to right to left. This property is usually used with the `unicode-bidi` property to allow display of different languages on the same document that may need to flow righ to left instead.
+`Direction` is a CSS property used as a way to change the direction of text flow. The default direction is left to right, but this property allows changing the direction to right to left. This property is usually used with the `unicode-bidi` property to allow display of different languages on the same document that may need to flow right to left instead.
 
 
 ## Syntax
@@ -27,30 +27,27 @@ The property will inherit the direction of its parent element.
 
 ## Example 1
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+In this example, the direction for the element with class `main` is set to right to left. In the browser, the text will simple align on the right.
 
 ```
 .main {
         direction: rtl;
 }
+
+<div class="main">A new day</div>
 ```
 
 ## Example 2
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+Building off the previous example, this example uses `direction` with `unicode-bidi`. The value `bidi-override` adds an embedded level of text. The end result is that the text in the browser is aligned on the right and displays "yad wen A."  
 
 ```
 .main {
         direction: rtl;
         unicode-bidi: bidi-override;
-```
+}
 
-## Example 3 - Complex
-
-Write a introduction to the example, sufficient to explain what the example is showing.
-
-```
-        background: none 50% 25% auto contain fixed;
+<div class="main">A new day</div>
 ```
 
 ## Browser Support
@@ -62,3 +59,7 @@ The `direction` property is supported by all major browsers.
 * Safari - 1.3 and up
 * Edge - 5.5 and up
 * Opera - 9.2 and up
+
+## Special Notes  
+
+Although CSS is most often suggested for styling, when it comes to setting the flow of text in a document, using the HTML attribute `dir` is recommended instead. 
