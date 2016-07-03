@@ -6,7 +6,7 @@ Insert tag
 
 ## Syntax
 
-The `ins` tag has an opening and closing tag. Attributes for this tag are `cite` and `datetime` in addition to [global attributes](http://www.w3schools.com/tags/ref_standardattributes.asp) and [event attributes](http://www.w3schools.com/tags/ref_eventattributes.asp). The `cite` and `datetime` attributes' values are shown only in the code so users cannot see the date, time and cite information when browsing the web page. By default, `ins` text will be underlined but that can be changed with CSS.  
+The `ins` tag has an opening and closing tag. Attributes for this tag are `cite` and `datetime` in addition to [global attributes](http://www.w3schools.com/tags/ref_standardattributes.asp) and [event attributes](http://www.w3schools.com/tags/ref_eventattributes.asp). The `cite` and `datetime` attributes' values are shown only in the code so users cannot see the date, time and cite information when browsing the web page. They are more important as semantic HTML telling the browser and website manager(s) changes to the document. By default, `ins` text will be underlined but that can be changed with CSS.  
 
 ```
   <ins cite="" datetime="">New Text</ins>
