@@ -29,7 +29,7 @@ The `cite`attribute shows the url of a document explaining the changes. This url
 
 ## Example 1
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+In this example, the `ins` tag is used by itself in a paragraph. Web managers and developers can see in the code that it is new text content. For users browing the page, they will see underlined text but without context as to its meaning. If the default text decoration style is set to none, users will not notice it is newly inserted text. 
 
 ```
   <p>This is <ins>new</ins> text.
@@ -37,7 +37,7 @@ Write a introduction to the example, sufficient to explain what the example is s
 
 ## Example 2
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+This example is an extension of the above, showing the `cite` and `datetime` attributes in addition to using the `ins` with the `del` tag. In this case, users can see that new text is replacing old text. It is most useful if the author or editor needs to let the audience know there was a mistake or update to their previous content. Developers and web managers, on the otherhand, can see when the update was made and have a link to documentation on the changes.
 
 ```
   <p>This is <del>old</del> <ins cite="http://www.newtextdocument" datetime=""2016-05-08T08:45:03+6:00">new</ins> text.
@@ -45,15 +45,15 @@ Write a introduction to the example, sufficient to explain what the example is s
 
 ## Example 3 - Complex
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+Using CSS will help the audience see the cite url or the time and date the change was made. In this example, the cite url is displayed after the sentent. `ins` and its attribute, `cite`, is selected using an `:after` pseudo-element. Then `content` is set as a property to append content to the `ins` element. The value in the `content` property directs the browser to show the `cite` attribute's value which is a url. 
 
 ```
   <style>
-    ins[cite]:before {
+    ins[cite]:after {
       content: " (" attr(cite) ")";
     }
   </style>
-  <p>This is <del>old</del> <ins cite="http://www.newtextdocument" datetime=""2016-05-08T08:45:03+6:00">new</ins> text.
+  <ins cite="http://www.newtextdocument">This is new text.</ins>
 ```
 
 ## Special Notes
