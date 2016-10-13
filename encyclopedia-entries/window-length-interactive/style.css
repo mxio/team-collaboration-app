@@ -1,0 +1,16 @@
+section {
+  background-color: white;
+  padding: 100px 0;
+}
+
+p {
+  color: #000;
+}
+
+button {
+  background-color: teal;
+  border: 0;
+  padding: 10px;
+  color: #fff;
+  margin: 0 20px
+}
