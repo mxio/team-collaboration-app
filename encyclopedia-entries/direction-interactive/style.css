@@ -1,0 +1,21 @@
+section {
+  background-color: #33122A;
+  padding: 100px 0;
+}
+
+.main {
+        direction: rtl;
+        color: #fff;
+}
+
+.text {
+  color: #fff;
+  padding: 0 20px;
+}
+button {
+  background-color: teal;
+  border: 0;
+  padding: 10px;
+  color: #fff;
+  margin: 0 20px
+}
