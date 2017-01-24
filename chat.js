@@ -27,7 +27,7 @@ chatSubmitBtn.addEventListener('click', function (event) {
   var date = new Date(),
       dateFormatted = formatDate(date);
   // Add message to chat log when clicked
-  chatLog.innerHTML += '<li class="chat-record chat-record-theme-1"><a href="#!" class="chat-record-avatar chat-avatar"><img src="http://placekitten.com/64/64" alt=""></a><div class="chat-record-bubble"><div class="chat-record-meta"><a class="chat-record-meta-link" href="#!">' + dateFormatted + '</a></div><div class="chat-record-heading"><h2 class="chat-record-heading">Fluffy McFlufferson</h2></div><div class="chat-record-content">' + document.getElementById('message-input').value; + '</div></div></li>';
+  chatLog.innerHTML += '<li class="chat-record chat-record-theme-1"><a href="#!" class="chat-record-avatar chat-avatar"><img src="https://placekitten.com/64/64" alt=""></a><div class="chat-record-bubble"><div class="chat-record-meta"><a class="chat-record-meta-link" href="#!">' + dateFormatted + '</a></div><div class="chat-record-heading"><h2 class="chat-record-heading">Fluffy McFlufferson</h2></div><div class="chat-record-content">' + document.getElementById('message-input').value; + '</div></div></li>';
 
   // Save message data to JS object
   data.messages.push({
