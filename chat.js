@@ -22,16 +22,6 @@ var formatDate = function (date) {
   return date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear() + "  " + strTime;
 };
 
-<<<<<<< HEAD
-	log.innerHTML +=  
-		`<li class="chat-record chat-record-theme-1">
-		<a href="#!" class="chat-record-avatar chat-avatar">
-		<img src="http://placekitten.com/64/64" alt=""></a>
-		<div class="chat-record-bubble"><div class="chat-record-meta"><a class="chat-record-meta-link" href="#!">16 minutes ago</a></div><div class="chat-record-heading"><h2 class="chat-record-heading">Fluffy McFlufferson</h2></div><div class="chat-record-content">` + document.getElementById('message-input').value; + `</div></div></li>`
-
-	messages.personOne.push(document.getElementById('message-input').value);
-}	
-=======
 // Send a message
 chatSubmitBtn.addEventListener('click', function (event) {
   var date = new Date(),
@@ -45,18 +35,9 @@ chatSubmitBtn.addEventListener('click', function (event) {
     'date': date,
     'dateFormatted': dateFormatted
   });
->>>>>>> ec9e419f8d2d974348b25630114ad0901dc25ced
 
   // Reset textarea value
   document.getElementById('message-input').value = '';
 
-<<<<<<< HEAD
-//object to store messages
-messages = {
-	personOne: [
-	]
-}
-=======
   console.log(data);
 });
->>>>>>> ec9e419f8d2d974348b25630114ad0901dc25ced
