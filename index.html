@@ -64,17 +64,17 @@
       <div class="tabgroup-tabpanels">
         <div class="tabgroup-tabpanel" id="tabgroup-tabpanel-chat" role="tabpanel" aria-labelledby="tabgroup-tab-chat" aria-hidden="false">
           <div class="chat" role="log" aria-live="assertive">
-            <ul id="chat-log" class="chat-log">
+            <ul class="chat-log js-chat-log">
             <!--Insert chat messages here -->
             </ul>
             <div class="chat-input">
-              <div class="chat-input-avatar chat-avatar"><img src="http://placekitten.com/64/64" alt=""></div>
+              <div class="chat-input-avatar chat-avatar"><img src="https://placekitten.com/64/64" alt=""></div>
               <div class="chat-textarea">
-                <textarea id="message-input" name="chat-textarea" form="chat" rows="4" placeholder="Say something&hellip;"></textarea>
+                <textarea id="message-input" name="chat-textarea" rows="4" placeholder="Say something&hellip;"></textarea>
                 <div class="chat-textarea-arrow"></div>
               </div>
               <div class="chat-submit">
-                <button id="submit-button" class="chat-submit-button" onclick="submit();">Send</button>
+                <button id="submit-button" class="chat-submit-button js-chat-submit-button">Send</button>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@
       </script>
     </div>
   </div>
-
-  <script src="chat.js" type="text/javascript"></script>
+  <!-- Scripts -->
+  <script src="./chat.js"></script>
 </body>
 </html>
